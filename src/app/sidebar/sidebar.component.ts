@@ -3,18 +3,17 @@ import { AboutComponent } from '../about/about.component';
 import { SkillsComponent } from '../skills/skills.component';
 import { ProjectsComponent } from '../projects/projects.component';
 import { ContactComponent } from '../contact/contact.component';
-import { SelectionService } from '../selection.service';
+import { SelectionService } from '../services/selection.service';
 @Component({
   selector: 'app-sidebar',
   imports: [],
   templateUrl: './sidebar.component.html',
-  styleUrl: './sidebar.component.css'
+  styleUrl: './sidebar.component.css',
 })
 export class SidebarComponent {
-  constructor(private selectionService: SelectionService){}
+  constructor(private selectionService: SelectionService) {}
 
-  select(section: string){
+  select(section: string) {
     this.selectionService.setSection(section);
   }
-
 }

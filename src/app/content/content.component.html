@@ -1,19 +1,13 @@
 <div class="content">
-    @switch (selectedSection) {
-        @case ("about") {
-            <app-about></app-about>
-        }
-        @case ("skills") {
-            <app-skills></app-skills>
-        }
-        @case ("projects") {
-            <app-projects></app-projects>
-        }
-        @case ("contact") {
-            <app-contact></app-contact>
-        }
-        @default {
-            <app-about></app-about>
-        }
-    }
+  @switch (selectedSection) { @case ("about") {
+  <app-about></app-about>
+  } @case ("skills") {
+  <app-skills></app-skills>
+  } @case ("projects") {
+  <app-projects></app-projects>
+  } @case ("contact") {
+  <app-contact></app-contact>
+  } @default {
+  <app-about></app-about>
+  } }
 </div>
