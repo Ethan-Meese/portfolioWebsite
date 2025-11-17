@@ -1,0 +1,8 @@
+@for (project of projects; track project.id) {
+    <p>{{project.name}}</p>
+    <p>{{project.stacks}}</p>
+    <p>{{project.description}}</p>
+    <img [src]="project.img" alt="Picture of project">
+    <p>{{project.githubLink}}</p>
+    <br>
+}
