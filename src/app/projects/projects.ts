@@ -2,41 +2,41 @@ export const PROJECTS = [
     {
         id: 1,
         name: "Dungeon Crawler Web Game",
-        stacks: "",
-        description: "",
+        stacks: "C#, .Net, Angular",
+        description: "Description...",
         img: "",
-        githubLink: ""
+        githubLink: "https://github.com/Ethan-Meese/Dungeon-Game-Web"
     },
     {
         id: 2,
         name: "E-Commerce Website",
-        stacks: "",
-        description: "",
-        img: "",
-        githubLink: "N/A"
-    },
-    {
-        id: 3,
-        name: "Dungeon Crawler CLI",
-        stacks: "",
-        description: "",
+        stacks: "Java, MVN, MySQL, Springboot",
+        description: "Description",
         img: "",
         githubLink: ""
     },
     {
+        id: 3,
+        name: "Dungeon Crawler CLI",
+        stacks: "C#",
+        description: "Description",
+        img: "",
+        githubLink: "https://github.com/Ethan-Meese/dungeon-game"
+    },
+    {
         id: 4,
         name: "Unity 2D Side Scroller",
-        stacks: "",
-        description: "",
+        stacks: "C#, Unity",
+        description: "Description",
         img: "",
         githubLink: ""
     },
     {
         id: 5,
         name: "BlackJack CLI",
-        stacks: "",
-        description: "",
+        stacks: "Python",
+        description: "Description",
         img: "",
-        githubLink: "N/A"
+        githubLink: ""
     }
 ]

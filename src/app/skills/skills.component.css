@@ -1,0 +1,28 @@
+.skills-row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin-bottom: 1rem;
+}
+.skills{
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    color: val(--text-main);
+    white-space: nowrap;
+}
+.languages{
+  background: rgba(76, 175, 80, 0.4); /* soft green */
+}
+.frontend{
+  background: rgba(77, 144, 254, 0.4); /* soft blue, semi-transparent */
+}
+.backend{
+  background: rgba(239, 83, 80, 0.4); /* soft red */
+}
+.databases{
+  background: rgba(255, 202, 40, 0.4); /* soft yellow */
+}
+.tools{
+  background: rgba(156, 39, 176, 0.4); /* soft purple */
+}

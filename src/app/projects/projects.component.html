@@ -1,8 +1,15 @@
+<h1>Projects</h1>
 @for (project of projects; track project.id) {
-    <p>{{project.name}}</p>
+    <h2>{{project.name}}</h2>
     <p>{{project.stacks}}</p>
     <p>{{project.description}}</p>
-    <img [src]="project.img" alt="Picture of project">
-    <p>{{project.githubLink}}</p>
+    @if (project.img != "") {
+        <img [src]="project.img" alt="Picture of project">
+    }
+    @if (project.githubLink != "") {
+        <a class="btn" [href]="project.githubLink">GitHub Repository</a>
+        <br>
+        <br>
+    }
     <br>
 }
