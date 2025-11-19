@@ -1,7 +1,8 @@
 .sidebar{  
     display: flex;
     flex-direction: column;
-    padding: 2rem 2rem;
+    padding-top: 2rem;
+    padding-left: 2rem;
     gap: 2rem;
     color: var(--text-main);
 }
@@ -36,10 +37,12 @@
 }
 
 .sidebar img{
+    align-self: center; /* puts just the image centered */
     width: 10rem;
     height: 10rem;
     border-radius: 50%;
     object-fit: cover;
+    display: block;
 }
 
 

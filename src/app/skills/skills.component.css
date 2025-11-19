@@ -26,3 +26,9 @@
 .tools{
   background: rgba(156, 39, 176, 0.4); /* soft purple */
 }
+/* To make the padding line up flush with the title just like how the image does*/
+h1{
+  padding-top: 2rem;
+  margin-top: 0;
+  line-height: .8;
+}

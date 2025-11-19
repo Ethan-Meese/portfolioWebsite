@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { SelectionService } from '../services/selection.service';
+import { SelectionService } from '../selection.service';
 import { AboutComponent } from "../about/about.component";
 import { SkillsComponent } from "../skills/skills.component";
 import { ProjectsComponent } from "../projects/projects.component";
