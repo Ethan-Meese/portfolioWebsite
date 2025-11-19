@@ -7,18 +7,23 @@ import { ContactComponent } from "../contact/contact.component";
 
 @Component({
   selector: 'app-content',
-  imports: [AboutComponent, SkillsComponent, ProjectsComponent, ContactComponent],
+  imports: [
+    AboutComponent,
+    SkillsComponent,
+    ProjectsComponent,
+    ContactComponent,
+  ],
   templateUrl: './content.component.html',
-  styleUrl: './content.component.css'
+  styleUrl: './content.component.css',
 })
 export class ContentComponent {
-  selectedSection: string = "about";
+  selectedSection: string = 'about';
 
-  constructor(private selectionService: SelectionService){}
+  constructor(private selectionService: SelectionService) {}
 
-  ngOnInit(){
-    this.selectionService.selectedSection$.subscribe(section => {
+  ngOnInit() {
+    this.selectionService.selectedSection$.subscribe((section) => {
       this.selectedSection = section;
-    })
+    });
   }
 }

@@ -8,13 +8,12 @@ import { SelectionService } from '../services/selection.service';
   selector: 'app-sidebar',
   imports: [],
   templateUrl: './sidebar.component.html',
-  styleUrl: './sidebar.component.css'
+  styleUrl: './sidebar.component.css',
 })
 export class SidebarComponent {
-  constructor(private selectionService: SelectionService){}
+  constructor(private selectionService: SelectionService) {}
 
-  select(section: string){
+  select(section: string) {
     this.selectionService.setSection(section);
   }
-
 }
