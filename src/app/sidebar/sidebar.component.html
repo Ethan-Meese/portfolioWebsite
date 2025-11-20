@@ -1,16 +1,18 @@
 <div class="sidebar">
-    <div>
-        <img src="assets/portrait.jpg" alt="Picture of Ethan Meese">
-        <h1>Ethan Meese</h1>
-        <h3>Software Developer</h3>
-        <h4>📍Sturgis, Michigan</h4>
-        <p>I may not have all the answers yet, but I know how to find them and get things done.</p>
-        <a class="sidebar-btn" href="assets/Resume.pdf" download="Resume.pdf">Resume</a>
-    </div>
-    <ul>
-        <button class="sidebar-btn" (click)="select('about')">About</button>
-        <button class="sidebar-btn" (click)="select('skills')">Skills</button>
-        <button class="sidebar-btn" (click)="select('projects')">Projects</button>
-        <button class="sidebar-btn" (click)="select('contact')">Contact</button>
-    </ul>
+  <div>
+    <img src="assets/portrait.jpg" alt="Picture of Ethan Meese" />
+    <h1>Ethan Meese</h1>
+    <h3>Software Developer</h3>
+    <h4>📍Sturgis, Michigan</h4>
+    <p>
+      Adaptable developer focused on solving problems and delivering results.
+    </p>
+    <a class="btn" href="assets/Resume.pdf" download="Resume.pdf">Resume</a>
+  </div>
+  <ul>
+    <button class="btn" (click)="select('about')">About</button>
+    <button class="btn" (click)="select('skills')">Skills</button>
+    <button class="btn" (click)="select('projects')">Projects</button>
+    <button class="btn" (click)="select('contact')">Contact</button>
+  </ul>
 </div>

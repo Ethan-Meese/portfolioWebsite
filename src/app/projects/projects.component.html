@@ -1,22 +1,25 @@
 <h1>Projects</h1>
 
 @for (project of projects; track project.id) {
-    <div>
-        <h2>{{project.name}}</h2>
+<div>
+  <h2>{{ project.name }}</h2>
 
-        <div class="stacks-row">
-            @for (stack of project.stacks; track $index) {
-                <span class="stacks">{{stack}}</span>
-            }
-        </div>
-        <p>{{project.description}}</p>
-        <div>
-            @if (project.img != "") {
-                <img [src]="project.img" alt="Picture of project">
-            }
-            @if (project.githubLink != "") {
-                <a class="btn" [href]="project.githubLink">GitHub Repository</a>
-            }
-        </div>
+  <div class="stacks-row">
+    @for (stack of project.stacks; track $index) {
+    <span class="stacks">{{ stack }}</span>
+    }
+  </div>
+  <div class="media-row">
+    <p>{{ project.description }}</p>
+    <div class="content">
+      @if (project.img != "") {
+      <img [src]="project.img" alt="Picture of project" />
+      } @if (project.githubLink != "") {
+      <a class="btn" target="_blank" [href]="project.githubLink"
+        >GitHub Repository</a
+      >
+      }
     </div>
+  </div>
+</div>
 }

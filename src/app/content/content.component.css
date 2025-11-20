@@ -1,16 +1,16 @@
 .content {
-  height: 100%;
+  height: calc(100vh - 2rem);
   width: 100%;
   display: flex;
   flex-direction: column;
   color: var(--text-main);
   overflow-y: auto;
+  flex: 1;
 
   /* Firefox scrollbar */
   scrollbar-width: thin;
-  scrollbar-color: rgba(255,255,255,0.2) transparent;
+  scrollbar-color: rgba(255, 255, 255, 0.2) transparent;
 }
-
 
 /* Webkit scrollbar */
 .content::-webkit-scrollbar {
