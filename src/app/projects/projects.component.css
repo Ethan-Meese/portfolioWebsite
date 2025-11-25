@@ -1,52 +1,101 @@
+/* Project title */
+h1 {
+  margin-top: 0;
+  line-height: 0.8;
+  padding-top: 2rem;
+}
+
+.projects-container{
+  padding-right: 2rem;
+}
+
+/* Stack chips */
 .stacks-row {
   display: flex;
   flex-wrap: wrap;
   gap: 0.6rem;
   margin-bottom: 1rem;
 }
+
 .stacks {
   padding: 0.4rem 0.8rem;
   border-radius: 20px;
   font-size: 0.9rem;
-  color: val(--text-main);
-  white-space: nowrap;
-  background: rgba(77, 144, 254, 0.4); /* soft blue, semi-transparent */
+  color: var(--text-main);
+  background: rgba(77, 144, 254, 0.4);
+  white-space: normal;
 }
 
-/* To make the padding line up flush with the title just like how the image does*/
-h1 {
-  margin-top: 0;
-  line-height: 0.8;
-  padding-top: 2rem;
-}
-img {
-  align-self: left; /* puts just the image centered */
-  width: 10rem;
-  height: 10rem;
-  border-radius: 5%;
-  object-fit: cover;
-  display: block;
-  animation: ease-in-out 3s;
+/* Media row layout (text + image/button) */
+.media-row {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  width: 100%;
 }
 
+/* Description text */
+.media-row p {
+  flex: 2;
+  min-width: 0;                /* Allows shrinking */
+  overflow-wrap: break-word;   /* Wraps long words */
+  word-break: break-word;      /* Extra safety */
+  white-space: normal;
+  max-width: 600px;            /* Reasonable width on desktop */
+  text-align: left;
+}
+
+/* Image + GitHub button container */
 .content {
+  flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 10rem;
-  padding-right: 2rem;
-  /* control area width */
 }
 
-.media-row {
-  display: flex;
-  gap: 10rem;
-  align-items: flex-start; /* keep top aligned */
+/* Responsive image */
+img {
+  width: 50%;
+  height: 50%;
+  min-height: 5rem;
+  min-width: 5rem;
+  border-radius: 5%;
+  object-fit: cover;
+  display: block;
 }
 
-@media (max-width: 600px) {
+/* 📱 Mobile adjustments */
+@media (max-width: 1000px) {
   .media-row {
     flex-direction: column;
-    align-items: center;
+    align-items: stretch;  /* Ensures full width without overflow */
+    width: 100%;
+    gap: 1rem;
+  }
+
+  .media-row p {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    white-space: normal;
+    text-align: left;
+  }
+
+  .content {
+    width: 100%;
+    align-items: center; /* Center image/button on mobile */
+    padding-right: 0;
+  }
+
+  img {
+    width: 20%;
+    height: 20%;
+    min-height: 5rem;
+    min-width: 5rem;
+    max-width: none;     /* prevent auto expansion */
+    margin: 0 auto;      /* center it */
+    display: block;
   }
 }
