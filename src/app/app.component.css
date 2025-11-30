@@ -1,11 +1,17 @@
-.portfolio-container{
-    display: flex;
-    width: 100%;
-    height: 100vh;
-  }
+.portfolio-container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
 app-sidebar {
   flex: 0 0 40%;
 }
 app-content {
   flex: 1;
+}
+
+@media (max-width: 600px) {
+  .portfolio-container {
+    flex-direction: column;
+  }
 }
