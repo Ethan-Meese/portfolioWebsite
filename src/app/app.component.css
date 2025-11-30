@@ -10,7 +10,7 @@ app-content {
   flex: 1;
 }
 
-@media (max-width: 600px) or (max-height: 200x) {
+@media (max-width: 600px) or (max-height: 200px) {
   .portfolio-container,
   .sidebar,
   .content {
