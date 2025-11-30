@@ -1,9 +1,11 @@
 .content {
-  height: calc(100vh - 2rem);
+  height: 100vh;
   display: flex;
   flex-direction: column;
   color: var(--text-main);
   overflow-y: auto;
+  padding-left: 1rem;
+  padding-right: 2rem;
 
   /* Firefox scrollbar */
   scrollbar-width: thin;

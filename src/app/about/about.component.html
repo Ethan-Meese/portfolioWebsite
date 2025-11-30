@@ -1,6 +1,19 @@
 <h1>About Me</h1>
-<p>I’m a senior Computer Science student at WGU, finishing ahead of schedule through disciplined study and self-driven learning. I previously earned my Associate of Science in Computer Science from Glen Oaks Community College with a 4.0 GPA, completing most of it during high school through dual-enrollment and AP coding courses. Growing up in Sturgis, Michigan, I’ve always been driven to work hard and push beyond what’s expected.</p>
-<p>Although I don’t yet have professional industry experience, I’ve built multiple technical projects to develop my skills and demonstrate my capabilities as a developer. I’m passionate about learning, highly motivated, and actively seeking opportunities to gain hands-on experience and grow within a development team.</p>
+<p>
+  I’m a senior Computer Science student at WGU, finishing ahead of schedule
+  through disciplined study and self-driven learning. I previously earned my
+  Associate of Science in Computer Science from Glen Oaks Community College with
+  a 4.0 GPA, completing most of it during high school through dual-enrollment
+  and AP coding courses. Growing up in Sturgis, Michigan, I’ve always been
+  driven to work hard and push beyond what’s expected.
+</p>
+<p>
+  Although I don’t yet have professional industry experience, I’ve built
+  multiple technical projects to develop my skills and demonstrate my
+  capabilities as a developer. I’m passionate about learning, highly motivated,
+  and actively seeking opportunities to gain hands-on experience and grow within
+  a development team.
+</p>
 
 <h1>Current project I am focused on</h1>
 
@@ -15,12 +28,18 @@
   <div class="media-row">
     <p>{{ projects[0].description }}</p>
     <div class="content">
-      @if (projects[0].img != "") {
-      <img [src]="projects[0].img" alt="Picture of project" />
-      } @if (projects[0].githubLink != "") {
-      <a class="btn" target="_blank" [href]="projects[0].githubLink"
-        >GitHub Repository</a
-      >
+      @if (projects[0].vid != "") {
+      <video controls muted>
+        <source
+          [src]="projects[0].vid"
+          type="video/mp4"
+          alt="Vidoe of project"
+        />
+      </video>
+      } @if (projects[0].githubLink != "") {<button class="btn">
+        <a target="_blank" [href]="projects[0].githubLink">GitHub Repository</a>
+      </button>
+
       }
     </div>
   </div>

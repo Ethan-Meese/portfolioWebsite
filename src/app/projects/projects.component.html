@@ -1,7 +1,7 @@
 <h1 class="fade-in">Projects</h1>
 
 @for (project of projects; track project.id; let i =$index) {
-<div class="projects-container" class="fade-in" [style.animationDelay]="(i * 0.5) + 's'">
+<div class="fade-in" [style.animationDelay]="i * 0.4 + 's'">
   <h2>{{ project.name }}</h2>
 
   <div class="stacks-row">
@@ -12,12 +12,14 @@
   <div class="media-row">
     <p>{{ project.description }}</p>
     <div class="content">
-      @if (project.img != "") {
-      <img [src]="project.img" alt="Picture of project" />
+      @if (project.vid != "") {
+      <video controls muted>
+        <source [src]="project.vid" type="video/mp4" alt="Vidoe of project" />
+      </video>
       } @if (project.githubLink != "") {
-      <a class="btn" target="_blank" [href]="project.githubLink"
-        >GitHub Repository</a
-      >
+      <button class="btn">
+        <a target="_blank" [href]="project.githubLink">GitHub Repository</a>
+      </button>
       }
     </div>
   </div>
