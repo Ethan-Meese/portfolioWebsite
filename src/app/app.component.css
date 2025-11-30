@@ -11,9 +11,12 @@ app-content {
 }
 
 @media (max-width: 600px) {
-  .portfolio-container {
+  .portfolio-container,
+  .sidebar,
+  .content {
     flex-direction: column;
     height: auto;
     overflow-y: auto;
+    max-height: 100dvh;
   }
 }

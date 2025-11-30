@@ -40,3 +40,7 @@
 .content::-webkit-scrollbar-thumb:hover {
   background-color: rgba(255, 255, 255, 0.4);
 }
+
+.nav-buttons {
+  size: auto;
+}
