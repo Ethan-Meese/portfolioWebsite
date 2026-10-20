@@ -42,12 +42,14 @@
   <div class="media-row">
     <p>{{ projects[0].description }}</p>
     <div class="content">
-      @if (projects[0].vid != "") {
+      @if (projects[0].vid != "" && projects[0].vid.endsWith(".png")) {
+        <img [src]="projects[0].vid" alt="Picture of Project" />
+      } @else if (projects[0].vid != "") {
         <video controls muted>
           <source
             [src]="projects[0].vid"
             type="video/mp4"
-            alt="Vidoe of project"
+            alt="Video of project"
           />
         </video>
       }

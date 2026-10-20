@@ -1,27 +1,34 @@
 <h1 class="fade-in">Projects</h1>
 
-@for (project of projects; track project.id; let i =$index) {
-<div class="fade-in" [style.animationDelay]="i * 0.4 + 's'">
-  <h2>{{ project.name }}</h2>
+@for (project of projects; track project.id; let i = $index) {
+  <div class="fade-in" [style.animationDelay]="i * 0.4 + 's'">
+    <h2>{{ project.name }}</h2>
 
-  <div class="stacks-row">
-    @for (stack of project.stacks; track $index) {
-    <span class="stacks">{{ stack }}</span>
-    }
-  </div>
-  <div class="media-row">
-    <p>{{ project.description }}</p>
-    <div class="content">
-      @if (project.vid != "") {
-      <video controls muted>
-        <source [src]="project.vid" type="video/mp4" alt="Vidoe of project" />
-      </video>
-      } @if (project.githubLink != "") {
-      <button class="btn">
-        <a target="_blank" [href]="project.githubLink">GitHub Repository</a>
-      </button>
+    <div class="stacks-row">
+      @for (stack of project.stacks; track $index) {
+        <span class="stacks">{{ stack }}</span>
       }
     </div>
+    <div class="media-row">
+      <p>{{ project.description }}</p>
+      <div class="content">
+        @if (project.vid != "" && project.vid.endsWith(".png")) {
+          <img [src]="project.vid" alt="Picture of Project" />
+        } @else if (project.vid != "") {
+          <video controls muted>
+            <source
+              [src]="project.vid"
+              type="video/mp4"
+              alt="Video of project"
+            />
+          </video>
+        }
+        @if (project.githubLink != "") {
+          <button class="btn">
+            <a target="_blank" [href]="project.githubLink">GitHub Repository</a>
+          </button>
+        }
+      </div>
+    </div>
   </div>
-</div>
 }

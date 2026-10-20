@@ -1,6 +1,33 @@
 export const PROJECTS = [
   {
     id: 1,
+    name: 'Coffee Brews Mobile App',
+    stacks: ['TypeScript', 'React Native', 'Expo'],
+    description:
+      'Developing a coffee brewing tracker app designed to help users create brewing recipes, manage coffee beans and grinders, and efficiently record their daily brews. The application allows users to quickly log brews using their saved coffee and equipment profiles, maintain a history of previous brews, and edit or update recipes, coffee records, grinders, and brew logs. The goal is to provide a centralized, user-friendly platform for organizing brewing equipment, streamlining the brewing process, and tracking coffee experiments to improve consistency and refine brewing techniques over time.',
+    vid: 'assets/CoffeeLog.png',
+    githubLink: 'https://github.com/Ethan-Meese/BrewLog',
+  },
+  {
+    id: 2,
+    name: 'Coffee CRUD App',
+    stacks: [
+      'C#',
+      'TypeScript',
+      'HTML',
+      'CSS',
+      '.Net',
+      'Angular',
+      'Entity Framework',
+      'MSSQL',
+    ],
+    description:
+      'Developed a full-stack Coffee CRUD web application using C#, .NET, Entity Framework, Angular, TypeScript, HTML, CSS, and Microsoft SQL Server (MSSQL). The application allows users to create, view, update, and delete coffee records stored in a local database. Used Entity Framework to facilitate database interactions and implemented secure configuration using application secrets to protect sensitive database credentials.',
+    vid: 'assets/CoffeeApp.png',
+    githubLink: 'https://github.com/Ethan-Meese/Coffee-CRUD-App',
+  },
+  {
+    id: 3,
     name: 'Dungeon Crawler Web App',
     stacks: ['C#', 'TypeScript', 'HTML', 'CSS', '.Net', 'Angular'],
     description:
@@ -9,7 +36,7 @@ export const PROJECTS = [
     githubLink: 'https://github.com/Ethan-Meese/Dungeon-Game-Web',
   },
   {
-    id: 2,
+    id: 4,
     name: 'Dungeon Crawler CLI',
     stacks: ['C#'],
     description:
@@ -18,7 +45,7 @@ export const PROJECTS = [
     githubLink: 'https://github.com/Ethan-Meese/dungeon-game',
   },
   {
-    id: 3,
+    id: 5,
     name: 'Unity 2D Side Scroller',
     stacks: ['C#', 'Unity'],
     description:
@@ -27,7 +54,7 @@ export const PROJECTS = [
     githubLink: '',
   },
   {
-    id: 4,
+    id: 6,
     name: 'BlackJack CLI',
     stacks: ['Python'],
     description:

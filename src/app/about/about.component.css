@@ -70,6 +70,16 @@ video {
   display: block;
 }
 
+img {
+  min-height: 5rem;
+  min-width: 5rem;
+  max-width: 585px;
+  max-height: 1266px;
+  border-radius: 5%;
+  object-fit: cover;
+  display: block;
+}
+
 /* 📱 Mobile adjustments */
 @media (max-width: 1000px) {
   .media-row {
